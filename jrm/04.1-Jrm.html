@@ -12,6 +12,21 @@
         background-color: chartreuse;
       }
     </style>
+    <script>
+        setInterval(bg_color,100)
+        let color = true
+        function bg_color() {
+            if(color) {
+                document.body.style.background = "chartreuse"
+                color = false
+            } else {
+                document.body.style.background = "red"
+                color = true
+            }
+
+
+        }
+    </script>
 </head>
 <body class="p-4 mx-auto">
     <h1 class="text-center text-blue-400">Coucou</h1>
