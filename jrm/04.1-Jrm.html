@@ -5,10 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>mon super lien</title>
+    <style>
+        body {
+            width: 100vw;
+            min-height: 100vh;
+            background-color: chartreuse;
+        }
+    </style>
+    <script>
+        setInterval(bg_color,500);
+        setInterval(bg_color_2,1150);
+        function bg_color() {
+            document.body.style.background = "red"
+        }
+        function bg_color_2 () {
+            document.body.style.background = "chartreuse"
+        }
+</script>
 </head>
+<<<<<<< HEAD
 <body class="mx-auto p-4 bg-green-400">
+=======
+<body class="p-4 mx-auto" id="body">
+>>>>>>> 98cc1082f6420312c26dfd39cac171e6665bbb68
     <h1 class="text-center text-blue-400">Coucou</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officiis tempora at molestias, quos alias unde molestiae ad consequuntur dolor sint corrupti iusto repudiandae, soluta autem modi porro maiores possimus facilis, illo laborum numquam. Corporis alias optio repudiandae laudantium ullam!
     </p>
+
 </body>
 </html>
