@@ -1,0 +1,76 @@
+/* Réinitialiser les marges et padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Couleurs de fond de la page */
+body {
+    background-color: black;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Rien de mieux que Comic Sans pour l'effet "ignoble" */
+    color: white;
+    text-align: center;
+}
+
+/* Animation clignotante pour les éléments */
+@keyframes clignote {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Classe pour appliquer l'animation clignotante */
+.clignote {
+    animation: clignote 1s infinite;
+}
+
+/* Première section avec couleur fuchsia */
+.section-fuschia {
+    background-color: fuchsia;
+    color: white;
+    padding: 50px;
+    animation: clignote 1s infinite;
+}
+
+.section-fuschia h2 {
+    font-size: 2.5rem;
+    color: yellow;
+}
+
+.section-fuschia p {
+    font-size: 1.5rem;
+    color: lime;
+}
+
+/* Deuxième section avec couleur chartreuse */
+.section-chartreuse {
+    background-color: chartreuse;
+    color: black;
+    padding: 50px;
+    animation: clignote 1s infinite;
+}
+
+.section-chartreuse h2 {
+    font-size: 2.5rem;
+    color: purple;
+}
+
+.section-chartreuse p {
+    font-size: 1.5rem;
+    color: red;
+}
+
+/* Effet de style pour l'en-tête */
+header h1 {
+    font-size: 3rem;
+    color: cyan;
+    text-shadow: 5px 5px 10px red;
+    animation: clignote 0.5s infinite alternate;
+}
+
+/* Footer avec effet clignotant aussi */
+footer p {
+    font-size: 1.2rem;
+    color: orange;
+    animation: clignote 2s infinite alternate;
